@@ -3,11 +3,13 @@ const URL = "https://jsonplaceholder.typicode.com/users"
 document.querySelector('.bouton').addEventListener('click' ,()=>{
     getData(URL);
 
-    // const tableElement = document.querySelector('.contain_table table');
-    // loader.style.display = 'block';
-    // tableElement.style.display = 'none';
 })
 
+document.addEventListener('DOMContentLoaded', ()=>{
+    const bouton = document.querySelector('.bouton');
+    const loadingMessage = document.querySelector('.loadingMessage');
+    const userTable = document.querySelector('.container_table table');
+})
 
 const tableBody = document.getElementById('userTableBody');
 
