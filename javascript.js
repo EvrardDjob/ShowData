@@ -4,6 +4,7 @@ const loadingMessage = document.querySelector('#loadingMessage');
 const userTable = document.querySelector('.mytable');
 const joy = "joy"
 const cncc = "cncc"
+const dsi = "DSI"
 document.querySelector('.bouton').addEventListener('click' ,()=>{
 
     userTable.classList.add('hideTable');
