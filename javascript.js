@@ -5,6 +5,8 @@ const userTable = document.querySelector('.mytable');
 const joy = "joy"
 const cncc = "cncc"
 const dsi = "DSI"
+
+alert('cliquer ici pour me fermer!')
 document.querySelector('.bouton').addEventListener('click' ,()=>{
 
     userTable.classList.add('hideTable');
