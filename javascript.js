@@ -1,5 +1,5 @@
 const URL = "https://jsonplaceholder.typicode.com/users"
-
+const cncc = "cncc"
 document.querySelector('.bouton').addEventListener('click' ,()=>{
     getData(URL);
 
