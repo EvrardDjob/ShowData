@@ -2,7 +2,7 @@ const URL = "https://jsonplaceholder.typicode.com/users"
 const bouton = document.querySelector('.bouton');
 const loadingMessage = document.querySelector('#loadingMessage');
 const userTable = document.querySelector('.mytable');
-
+const cncc = "cncc"
 document.querySelector('.bouton').addEventListener('click' ,()=>{
 
     userTable.classList.add('hideTable');
