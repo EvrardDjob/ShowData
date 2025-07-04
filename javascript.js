@@ -1,14 +1,16 @@
 const URL = "https://jsonplaceholder.typicode.com/users"
-const cncc = "cncc"
+const bouton = document.querySelector('.bouton');
+const loadingMessage = document.querySelector('#loadingMessage');
+const userTable = document.querySelector('.mytable');
+
 document.querySelector('.bouton').addEventListener('click' ,()=>{
+
+    userTable.classList.add('hideTable');
+    loadingMessage.classList.remove('hideLoader');
+    loadingMessage.classList.add('showLoader');
+    
     getData(URL);
 
-})
-
-document.addEventListener('DOMContentLoaded', ()=>{
-    const bouton = document.querySelector('.bouton');
-    const loadingMessage = document.querySelector('.loadingMessage');
-    const userTable = document.querySelector('.container_table table');
 })
 
 const tableBody = document.getElementById('userTableBody');
@@ -47,6 +49,13 @@ async function getData(url){
 
     }catch(error){
         console.error("Une erreur est survenue lors de la récupération des données :", error);
+        tableBody.innerHTML = "Erreur de chargement des données. Veuillez réessayer.";
+        tableBody.style.color = "red";
+
+    }finally{
+        loadingMessage.classList.add('hideLoader');
+        loadingMessage.classList.remove('showLoader'); 
+        userTable.classList.remove('hideTable');
     }
     
 }
