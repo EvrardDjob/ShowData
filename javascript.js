@@ -3,6 +3,7 @@ const bouton = document.querySelector('.bouton');
 const loadingMessage = document.querySelector('#loadingMessage');
 const userTable = document.querySelector('.mytable');
 const joy = "joy"
+const cncc = "cncc"
 document.querySelector('.bouton').addEventListener('click' ,()=>{
 
     userTable.classList.add('hideTable');
