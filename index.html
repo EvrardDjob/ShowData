@@ -1,36 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
     <title>education</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="contain">
+      <div class="containerForTitle">
         <div class="containt_title">
-            <h1>Ici c'est le titre de la page!</h1>
+          <h1>Ici c'est le titre de la page!</h1>
+          <div class="parent-search">
+            <input type="text" class="searchbar" />
+            <div class="contain-lopImage">
+              <img src="./image/icons8-chercher-50.png" alt="Error" />
+            </div>
+          </div>
         </div>
-        <div class="contain_table">
-            <p id="loadingMessage" class="hideLoader">Chargement des données...</p>
-            <table class="mytable">
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Nom</th>
-                        <th>Pseudo</th>
-                        <th>Telephone</th>
-                        <th>Site Web</th>
-                        <th>Email</th>
-                    </tr>
-                </thead>
-                <tbody id="userTableBody"></tbody>
-            </table>
-        </div>
-        <div class="contain_bouton">
-            <button class="bouton">Cliquer ici</button>
-        </div>
+      </div>
+      <div class="contain_table">
+        <p id="loadingMessage" class="hideLoader">Chargement des données...</p>
+        <table class="mytable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Nom</th>
+              <th>Pseudo</th>
+              <th>Telephone</th>
+              <th>Site Web</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody id="userTableBody"></tbody>
+        </table>
+      </div>
+      <div class="contain_bouton">
+        <button class="bouton">Cliquer ici</button>
+        <button class="boutonCreate">Ajouter un utilisateur!</button>
+      </div>
     </div>
     <script src="./javascript.js"></script>
-</body>
+  </body>
 </html>
