@@ -3,7 +3,7 @@ const bouton = document.querySelector(".bouton");
 const loadingMessage = document.querySelector("#loadingMessage");
 const userTable = document.querySelector(".mytable");
 const tableBody = document.getElementById("userTableBody");
-allUsers = [];
+let allUsers = [];
 const searchBar = document.querySelector(".searchbar");
 const containLop = document.querySelector(".contain-lopImage");
 
