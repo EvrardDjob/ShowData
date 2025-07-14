@@ -43,7 +43,7 @@ async function getData(url) {
       error
     );
     tableBody.innerHTML =
-      "Erreur de chargement des données. Veuillez réessayer.";
+      "<tr><td colspan='6'>Erreur de chargement des données. Veuillez réessayer...</td></tr>";
     tableBody.style.color = "red";
   } finally {
     loadingMessage.classList.add("hideLoader");
